@@ -16,7 +16,7 @@ from django.http import HttpResponse
 
 # Una vista simple para la raíz
 def home(request):
-    return HttpResponse("Hello, world. You're at the home page.")
+    return HttpResponse("tuki, esto funca papá")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
