@@ -17,5 +17,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/home',views.home),  # Agrega esta línea para la ruta raíz
+    path('home/',views.home), 
 ]
