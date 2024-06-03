@@ -1,24 +1,21 @@
 
+# from django.contrib import admin
+# from django.urls import path
+# from . import views
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path(" ",views.simple, name="simple"),
+#     path("dinamico/<str:name>",views.dinamico, name="dinamico"),    
+    
+# ]
+   
+
 from django.contrib import admin
 from django.urls import path
 from . import views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("/",views.simple, name="simple"),
-    path("dinamico/<str:name>",views.dinamico, name="dinamico"),    
-    
+    path('/home',views.home),  # Agrega esta línea para la ruta raíz
 ]
-   
-
-# from django.contrib import admin
-# from django.urls import path
-# from django.http import HttpResponse
-
-# # Una vista simple para la raíz
-# def home(request):
-#     return HttpResponse("tuki, esto funca papá")
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('', home),  # Agrega esta línea para la ruta raíz
-# ]
